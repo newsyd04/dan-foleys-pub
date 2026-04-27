@@ -6,9 +6,25 @@ import SEO from "../components/SEO";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-// Placeholder list · populated by photo scrape (or replaced manually).
-// Each entry is { src, alt } so swapping in real images is trivial.
-const PHOTOS = [];
+import pinkFront from "../assets/photos/01-pink-front.jpg";
+import cocktails from "../assets/photos/02-cocktails.jpg";
+import pastries from "../assets/photos/03-pastries.jpg";
+import munsterWinner from "../assets/photos/04-munster-winner.jpg";
+import interiorDecor from "../assets/photos/05-interior-decor.jpg";
+import frontTagged from "../assets/photos/06-front-tagged.jpg";
+import janInterior from "../assets/photos/07-jan-interior.jpg";
+import decInterior from "../assets/photos/08-dec-interior.jpg";
+
+const PHOTOS = [
+  { src: pinkFront, alt: "The pink front of Dan Foley's Pub, with painted gas cylinder and the words 'It's an illusion'" },
+  { src: decInterior, alt: "Inside Dan Foley's Pub" },
+  { src: cocktails, alt: "Cocktails at the bar" },
+  { src: pastries, alt: "Pastries and treats" },
+  { src: interiorDecor, alt: "Pub interior, decor detail" },
+  { src: janInterior, alt: "An evening at the bar" },
+  { src: frontTagged, alt: "The pub front, Annascaul village" },
+  { src: munsterWinner, alt: "Munster Winner, Pub of the Year poster" },
+];
 
 export default function GalleryPage() {
   const [lightboxIndex, setLightboxIndex] = useState(-1);

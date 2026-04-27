@@ -6,6 +6,11 @@ import Button from "../components/Button";
 import FadeIn from "../components/FadeIn";
 import SEO from "../components/SEO";
 
+import pinkFront from "../assets/photos/01-pink-front.jpg";
+import cocktails from "../assets/photos/02-cocktails.jpg";
+import decInterior from "../assets/photos/08-dec-interior.jpg";
+import janInterior from "../assets/photos/07-jan-interior.jpg";
+
 export default function HomePage() {
   return (
     <>
@@ -16,8 +21,11 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
-        {/* Hero photo (placeholder gradient until real photo lands) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-burgundy-700 via-burgundy-600 to-charcoal-900" />
+        <img
+          src={pinkFront}
+          alt="The pink front of Dan Foley's Pub, Annascaul"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 hero-overlay" />
         <Container className="relative pb-24 md:pb-32 pt-32">
           <p className="text-rose-300 text-xs uppercase tracking-widest font-semibold mb-5">
@@ -84,13 +92,22 @@ export default function HomePage() {
           </h2>
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {[1, 2, 3].map((n, i) => (
+          {[
+            { src: decInterior, alt: "Inside Dan Foley's Pub" },
+            { src: cocktails, alt: "Cocktails at the bar" },
+            { src: janInterior, alt: "An evening at the bar" },
+          ].map((p, i) => (
             <FadeIn
-              key={n}
+              key={p.src}
               delay={i * 0.08}
-              className="aspect-[4/5] bg-burgundy-700/15 rounded-soft border rule-cream paper-texture flex items-center justify-center text-charcoal-800/40 text-sm"
+              className="aspect-[4/5] rounded-soft overflow-hidden border rule-cream"
             >
-              Photo {n}
+              <img
+                src={p.src}
+                alt={p.alt}
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
             </FadeIn>
           ))}
         </div>
