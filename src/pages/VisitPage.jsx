@@ -57,9 +57,11 @@ export default function VisitPage() {
               <p className="font-display text-2xl text-charcoal-900 leading-tight">
                 Dan Foley's Pub
                 <br />
+                Main Street, Ardrinane
+                <br />
                 Annascaul
                 <br />
-                Co. Kerry, Ireland
+                Co. Kerry · V92 YH2H
               </p>
             </div>
 
@@ -121,8 +123,8 @@ export default function VisitPage() {
           <FadeIn delay={0.1} className="space-y-6">
             <div className="aspect-[4/3] w-full overflow-hidden rounded-soft border rule-cream shadow-warm">
               <iframe
-                title="Map of Annascaul, Co. Kerry"
-                src="https://www.google.com/maps?q=Annascaul,%20Co.%20Kerry,%20Ireland&output=embed"
+                title="Map of Dan Foley's Pub, Annascaul, Co. Kerry"
+                src="https://www.google.com/maps?q=Dan+Foley's+Pub,+Annascaul,+Co.+Kerry,+V92+YH2H&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
