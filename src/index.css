@@ -64,7 +64,7 @@
     );
   }
 
-  /* Subtle paper grain on cream sections — pure CSS, no asset bytes */
+  /* Subtle paper grain on cream sections · pure CSS, no asset bytes */
   .paper-texture {
     position: relative;
   }

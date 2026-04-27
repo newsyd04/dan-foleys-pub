@@ -6,7 +6,7 @@ import SEO from "../components/SEO";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-// Placeholder list — populated by photo scrape (or replaced manually).
+// Placeholder list · populated by photo scrape (or replaced manually).
 // Each entry is { src, alt } so swapping in real images is trivial.
 const PHOTOS = [];
 
@@ -17,7 +17,7 @@ export default function GalleryPage() {
     <>
       <SEO
         title="Gallery"
-        description="Photos of Dan Foley's Pub in Annascaul — the famous pink front, the snug interior, and the village around it."
+        description="Photos of Dan Foley's Pub in Annascaul · the famous pink front, the snug interior, and the village around it."
       />
 
       <PageHeader

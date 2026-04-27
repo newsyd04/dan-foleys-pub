@@ -5,16 +5,16 @@ import FadeIn from "../components/FadeIn";
 import SEO from "../components/SEO";
 
 const HOURS = [
-  // TODO: confirm — placeholder hours, based on "open from 2 pm every day"
+  // TODO: confirm · placeholder hours, based on "open from 2 pm every day"
   // pattern reported by visitors. Pub to confirm exact closing times and any
   // off-season variation.
-  { day: "Monday", time: "2:00 pm – late" },
-  { day: "Tuesday", time: "2:00 pm – late" },
-  { day: "Wednesday", time: "2:00 pm – late" },
-  { day: "Thursday", time: "2:00 pm – late" },
-  { day: "Friday", time: "2:00 pm – late" },
-  { day: "Saturday", time: "2:00 pm – late" },
-  { day: "Sunday", time: "2:00 pm – late" },
+  { day: "Monday", time: "2:00 pm to late" },
+  { day: "Tuesday", time: "2:00 pm to late" },
+  { day: "Wednesday", time: "2:00 pm to late" },
+  { day: "Thursday", time: "2:00 pm to late" },
+  { day: "Friday", time: "2:00 pm to late" },
+  { day: "Saturday", time: "2:00 pm to late" },
+  { day: "Sunday", time: "2:00 pm to late" },
 ];
 
 const SOCIALS = [
@@ -37,7 +37,7 @@ export default function VisitPage() {
     <>
       <SEO
         title="Find us"
-        description="Dan Foley's Pub is in the heart of Annascaul village, Co. Kerry — easy stop on the road between Tralee, Dingle, and Inch Beach."
+        description="Dan Foley's Pub is in the heart of Annascaul village, Co. Kerry · easy stop on the road between Tralee, Dingle, and Inch Beach."
       />
 
       <PageHeader
@@ -137,16 +137,16 @@ export default function VisitPage() {
               </h3>
               <ul className="space-y-2 text-sm text-charcoal-800/85 leading-relaxed">
                 <li>
-                  <strong>From Tralee:</strong> 35 km west on the N86 — about
-                  35 minutes.
+                  <strong>From Tralee:</strong> about 40 minutes west on the
+                  N86.
                 </li>
                 <li>
-                  <strong>From Dingle:</strong> 18 km east on the N86 — about
-                  20 minutes.
+                  <strong>From Dingle:</strong> about 20 minutes east on the
+                  N86.
                 </li>
                 <li>
-                  <strong>From Inch Beach:</strong> a short hop — 8 km, under
-                  10 minutes.
+                  <strong>From Inch Beach:</strong> about 10 minutes around
+                  the head of the bay.
                 </li>
               </ul>
             </div>

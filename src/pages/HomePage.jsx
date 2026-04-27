@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Home"
-        description="Heritage pub in the heart of Annascaul, Co. Kerry. A pint, a story, and a welcome by the famous pink front."
+        description="The famous pink-fronted pub of Annascaul, Co. Kerry. Once run by magician Dan Foley, reopened in 2025."
       />
 
       {/* HERO */}
@@ -29,7 +29,7 @@ export default function HomePage() {
             illusion.
           </h1>
           <p className="mt-7 text-lg md:text-xl text-cream-100/90 leading-relaxed max-w-xl font-sans">
-            The famous pink-fronted pub of Annascaul, Co. Kerry — once run by
+            The famous pink-fronted pub of Annascaul, Co. Kerry · once run by
             a magician, photographed all over the world, and back behind the
             bar after thirty-five years.
           </p>
@@ -56,10 +56,9 @@ export default function HomePage() {
           <p className="mt-6 text-charcoal-800/85 text-base md:text-lg leading-relaxed">
             Sat in the village of Annascaul on the road between Tralee and
             Dingle, Dan Foley's has been a postcard-staple of Kerry for
-            decades — instantly recognisable by its pink, blue and red front
+            decades, instantly recognisable by its pink, blue and red front
             and the words painted across it. After a long quiet following
-            Dan's passing in 1990, the door is unlocked again, the front
-            freshly painted, and the welcome unchanged.
+            Dan's passing in 1990, the door is open again.
           </p>
           <div className="mt-8">
             <Link
@@ -113,7 +112,7 @@ export default function HomePage() {
               Drop in next time you're on the peninsula.
             </h2>
             <p className="mt-4 text-cream-200/85 leading-relaxed">
-              We're in the middle of Annascaul village — easy stop on the way
+              We're in the middle of Annascaul village · easy stop on the way
               to or from Dingle, Inch Beach, or the Conor Pass.
             </p>
           </FadeIn>

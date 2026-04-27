@@ -21,7 +21,7 @@ export default function NotFoundPage() {
             </h1>
             <p className="mt-5 text-charcoal-800/85 text-lg leading-relaxed">
               The page you were looking for isn't here. The pink one,
-              however, is — and you're welcome any time.
+              however, is, and you're welcome any time.
             </p>
             <div className="mt-8 flex flex-wrap gap-3 justify-center">
               <Button to="/" variant="primary" size="md">

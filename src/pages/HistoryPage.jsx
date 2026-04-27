@@ -10,7 +10,7 @@ export default function HistoryPage() {
     <>
       <SEO
         title="Our story"
-        description="The history of Dan Foley's Pub in Annascaul — magician, pink front, the most photographed pub in Kerry, and the 2025 reopening that brought it back."
+        description="The history of Dan Foley's Pub in Annascaul · magician, pink front, the most photographed pub in Kerry, and the 2025 reopening that brought it back."
       />
 
       <PageHeader
@@ -27,7 +27,7 @@ export default function HistoryPage() {
               Dingle, sat at the foot of the mountains and a short walk from
               Annascaul Lake. For decades, anyone driving the peninsula stopped
               for the same reason: the pink front of Dan Foley's, painted up
-              with a gas cylinder and three words — <em>it's an illusion</em>.
+              with a gas cylinder and three words · <em>it's an illusion</em>.
             </p>
           </FadeIn>
 
@@ -37,9 +37,9 @@ export default function HistoryPage() {
             </h2>
             <p className="text-charcoal-800/85 leading-relaxed">
               Dan Foley was no ordinary publican. He was a retired magician
-              and member of the Magic Circle, famed for sleight-of-hand and
-              the long yarn told well. The most-photographed pub in Kerry was
-              presided over by a man whose entire trade was illusion — and he
+              and member of the Magic Circle, known for sleight-of-hand. The
+              most-photographed pub in Kerry was
+              presided over by a man whose entire trade was illusion · and he
               made the irony part of the front of the building. The pink,
               blue and red façade, with the words painted across it, became
               the staple image of the Real Ireland Design postcard series and
@@ -53,7 +53,7 @@ export default function HistoryPage() {
                 "It's an illusion."
               </p>
               <footer className="mt-3 text-sm text-charcoal-800/65">
-                — painted across the front of the pub
+                Painted across the front of the pub.
               </footer>
             </blockquote>
           </FadeIn>
@@ -66,9 +66,9 @@ export default function HistoryPage() {
               Annascaul is famous as the home of Tom Crean, the Antarctic
               explorer who served on three expeditions to the South Pole and
               came home to open the South Pole Inn just up the road. Crean's
-              wife, Ellen Herlihy, was born in this very building — long
-              before it became the pink-fronted pub the world came to know.
-              Two pubs, two extraordinary men, one small village.
+              wife, Ellen Herlihy, was born in Annascaul · by some accounts
+              at the very building that would later become Dan Foley's. Two
+              pubs, two extraordinary men, one small village.
             </p>
           </FadeIn>
 
@@ -78,11 +78,10 @@ export default function HistoryPage() {
             </h2>
             <p className="text-charcoal-800/85 leading-relaxed">
               Dan Foley died in 1990. The pub closed with him, and the
-              building sat for the better part of three and a half decades —
-              the colours fading, the famous Guinness sign rusting, the door
-              shut to the road. Visitors still drove the peninsula and
-              stopped to photograph the pink front, but no one was pouring
-              behind it.
+              building sat shuttered for the better part of three and a half
+              decades. The vibrant colours faded, the enamel "Guinness is
+              good for you" sign rusted on the front, and the door stayed
+              shut to the road.
             </p>
           </FadeIn>
 
@@ -91,13 +90,10 @@ export default function HistoryPage() {
               Back in 2025.
             </h2>
             <p className="text-charcoal-800/85 leading-relaxed">
-              In June 2025, Dan Foley's reopened — restored to its former
-              glory in time for the bank holiday weekend, the pink front
-              freshly painted, the door unlocked again after thirty-five
-              years. The bar runs much as it always has. A fire when it's
-              needed, a pint poured properly, music when the night calls for
-              it. The illusion, it turns out, was that it was ever really
-              gone.
+              In June 2025, Dan Foley's reopened in time for the bank
+              holiday weekend, restored to its former glory and back behind
+              the bar after thirty-five years. The illusion, it turns out,
+              was that it was ever really gone.
             </p>
           </FadeIn>
 
