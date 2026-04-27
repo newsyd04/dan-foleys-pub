@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    @apply overscroll-none;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  body {
+    @apply bg-cream-50 text-charcoal-900 font-sans antialiased;
+    font-feature-settings: "kern", "liga", "ss01";
+  }
+
+  body.nav-locked {
+    overflow: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-charcoal-900 font-display tracking-tight;
+    line-height: 1.05;
+    font-weight: 600;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  ::selection {
+    @apply bg-burgundy-600 text-cream-50;
+  }
+}
+
+@layer utilities {
+  .hairline {
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(45, 22, 14, 0.18),
+      transparent
+    );
+  }
+
+  /* Subtle paper grain on cream sections — pure CSS, no asset bytes */
+  .paper-texture {
+    position: relative;
+  }
+  .paper-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    background-image: radial-gradient(
+        rgba(60, 35, 20, 0.04) 1px,
+        transparent 1px
+      ),
+      radial-gradient(rgba(60, 35, 20, 0.03) 1px, transparent 1px);
+    background-size: 4px 4px, 6px 6px;
+    background-position: 0 0, 2px 2px;
+  }
+
+  /* Hero gradient overlay sits on top of pub photo */
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(16, 13, 12, 0.55) 0%,
+      rgba(16, 13, 12, 0.35) 40%,
+      rgba(16, 13, 12, 0.85) 100%
+    );
+  }
+
+  /* Hairline divider on cream */
+  .rule-cream {
+    border-color: rgba(45, 22, 14, 0.12);
+  }
+}
