@@ -37,8 +37,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-cream-200/80 text-sm leading-relaxed max-w-sm">
-              The famous pink-fronted pub in the heart of Annascaul, Co.
-              Kerry. Reopened in 2025.
+              A heritage pub in the heart of Annascaul. Drop in for a pint, a
+              story, and a welcome by the famous pink front.
             </p>
           </div>
 

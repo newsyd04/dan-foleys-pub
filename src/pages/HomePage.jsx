@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <SEO
         title="Home"
-        description="The famous pink-fronted pub of Annascaul, Co. Kerry. Once run by magician Dan Foley, reopened in 2025."
+        description="Heritage pub in the heart of Annascaul, Co. Kerry. A pint, a story, and a welcome by the famous pink front."
       />
 
       {/* HERO */}
@@ -58,7 +58,8 @@ export default function HomePage() {
             Dingle, Dan Foley's has been a postcard-staple of Kerry for
             decades, instantly recognisable by its pink, blue and red front
             and the words painted across it. After a long quiet following
-            Dan's passing in 1990, the door is open again.
+            Dan's passing in 1990, the door is unlocked again, the front
+            freshly painted, and the welcome unchanged.
           </p>
           <div className="mt-8">
             <Link
