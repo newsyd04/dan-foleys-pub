@@ -6,7 +6,7 @@ import Button from "../components/Button";
 import FadeIn from "../components/FadeIn";
 import SEO from "../components/SEO";
 
-import pinkFront from "../assets/photos/01-pink-front.jpg";
+import heroFront from "../assets/photos/00-hero-front.jpg";
 import cocktails from "../assets/photos/02-cocktails.jpg";
 import decInterior from "../assets/photos/08-dec-interior.jpg";
 import janInterior from "../assets/photos/07-jan-interior.jpg";
@@ -22,7 +22,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
         <img
-          src={pinkFront}
+          src={heroFront}
           alt="The pink front of Dan Foley's Pub, Annascaul"
           className="absolute inset-0 w-full h-full object-cover"
         />

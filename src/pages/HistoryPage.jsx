@@ -5,15 +5,15 @@ import FadeIn from "../components/FadeIn";
 import Button from "../components/Button";
 import SEO from "../components/SEO";
 
-import pinkFront from "../assets/photos/01-pink-front.jpg";
-import interiorDecor from "../assets/photos/05-interior-decor.jpg";
-import frontTagged from "../assets/photos/06-front-tagged.jpg";
+import heroFront from "../assets/photos/00-hero-front.jpg";
+import tomCrean from "../assets/photos/tom-crean.jpg";
 import decInterior from "../assets/photos/08-dec-interior.jpg";
 
-function HistoryPhoto({ src, alt, caption, delay = 0.05 }) {
+function HistoryPhoto({ src, alt, caption, delay = 0.05, portrait = false }) {
+  const widthClass = portrait ? "max-w-xs" : "max-w-3xl";
   return (
     <FadeIn delay={delay} className="my-16 md:my-20">
-      <figure className="max-w-3xl mx-auto">
+      <figure className={`${widthClass} mx-auto`}>
         <div className="overflow-hidden rounded-soft border rule-cream shadow-warm">
           <img
             src={src}
@@ -60,7 +60,7 @@ export default function HistoryPage() {
         </div>
 
         <HistoryPhoto
-          src={pinkFront}
+          src={heroFront}
           alt="The pink front of Dan Foley's Pub, with painted gas cylinder and 'it's an illusion'"
           caption="The pink front · Annascaul, Co. Kerry"
         />
@@ -110,9 +110,10 @@ export default function HistoryPage() {
         </div>
 
         <HistoryPhoto
-          src={frontTagged}
-          alt="Dan Foley's Pub from the village street"
-          caption="A regular stop on the Dingle peninsula"
+          src={tomCrean}
+          alt="Tom Crean, Antarctic explorer, c. 1915"
+          caption="Tom Crean · c. 1915"
+          portrait
         />
 
         <div className="max-w-prose mx-auto">
