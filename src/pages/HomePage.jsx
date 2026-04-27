@@ -28,15 +28,15 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 hero-overlay" />
         <Container className="relative pb-24 md:pb-32 pt-32">
-          <p className="text-rose-300 text-xs uppercase tracking-widest font-semibold mb-5">
+          <p className="text-rose-300 text-xs uppercase tracking-widest font-semibold mb-5 hero-text-shadow">
             Annascaul · Co. Kerry
           </p>
-          <h1 className="font-display text-6xl md:text-8xl text-cream-50 leading-[0.95] max-w-4xl">
+          <h1 className="font-display text-6xl md:text-8xl text-cream-50 leading-[0.95] max-w-4xl hero-text-shadow">
             It's an
             <br />
             illusion.
           </h1>
-          <p className="mt-7 text-lg md:text-xl text-cream-100/90 leading-relaxed max-w-xl font-sans">
+          <p className="mt-7 text-lg md:text-xl text-cream-100 leading-relaxed max-w-xl font-sans hero-text-shadow">
             The famous pink-fronted pub of Annascaul, Co. Kerry · once run by
             a magician, photographed all over the world, and back behind the
             bar after thirty-five years.

@@ -84,14 +84,28 @@
     background-position: 0 0, 2px 2px;
   }
 
-  /* Hero gradient overlay sits on top of pub photo */
+  /* Hero gradient overlay sits on top of pub photo · darkens enough for
+     cream text to read cleanly against the busy pink/blue/red bg */
   .hero-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgba(16, 13, 12, 0.55) 0%,
-      rgba(16, 13, 12, 0.35) 40%,
-      rgba(16, 13, 12, 0.85) 100%
-    );
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(16, 13, 12, 0.7) 0%,
+        rgba(16, 13, 12, 0.5) 35%,
+        rgba(16, 13, 12, 0.7) 70%,
+        rgba(16, 13, 12, 0.92) 100%
+      ),
+      linear-gradient(
+        to right,
+        rgba(16, 13, 12, 0.45) 0%,
+        rgba(16, 13, 12, 0.15) 45%,
+        rgba(16, 13, 12, 0) 75%
+      );
+  }
+
+  /* Soft text shadow for body copy overlaid on the hero photo */
+  .hero-text-shadow {
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
   }
 
   /* Hairline divider on cream */

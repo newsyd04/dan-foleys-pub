@@ -5,6 +5,33 @@ import FadeIn from "../components/FadeIn";
 import Button from "../components/Button";
 import SEO from "../components/SEO";
 
+import pinkFront from "../assets/photos/01-pink-front.jpg";
+import interiorDecor from "../assets/photos/05-interior-decor.jpg";
+import frontTagged from "../assets/photos/06-front-tagged.jpg";
+import decInterior from "../assets/photos/08-dec-interior.jpg";
+
+function HistoryPhoto({ src, alt, caption, delay = 0.05 }) {
+  return (
+    <FadeIn delay={delay} className="my-16 md:my-20">
+      <figure className="max-w-3xl mx-auto">
+        <div className="overflow-hidden rounded-soft border rule-cream shadow-warm">
+          <img
+            src={src}
+            alt={alt}
+            loading="lazy"
+            className="w-full h-auto block"
+          />
+        </div>
+        {caption && (
+          <figcaption className="mt-3 text-center text-xs uppercase tracking-widest text-charcoal-800/60 font-semibold">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+    </FadeIn>
+  );
+}
+
 export default function HistoryPage() {
   return (
     <>
@@ -30,8 +57,16 @@ export default function HistoryPage() {
               with a gas cylinder and three words · <em>it's an illusion</em>.
             </p>
           </FadeIn>
+        </div>
 
-          <FadeIn delay={0.05} className="mt-12">
+        <HistoryPhoto
+          src={pinkFront}
+          alt="The pink front of Dan Foley's Pub, with painted gas cylinder and 'it's an illusion'"
+          caption="The pink front · Annascaul, Co. Kerry"
+        />
+
+        <div className="max-w-prose mx-auto">
+          <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl text-burgundy-700 mb-4">
               The publican magician.
             </h2>
@@ -40,11 +75,11 @@ export default function HistoryPage() {
               and member of the Magic Circle, famed for sleight-of-hand and
               the long yarn told well. The most-photographed pub in Kerry
               was presided over by a man whose entire trade was illusion ·
-              and he
-              made the irony part of the front of the building. The pink,
-              blue and red façade, with the words painted across it, became
-              the staple image of the Real Ireland Design postcard series and
-              has appeared in publications about Ireland all over the world.
+              and he made the irony part of the front of the building. The
+              pink, blue and red façade, with the words painted across it,
+              became the staple image of the Real Ireland Design postcard
+              series and has appeared in publications about Ireland all over
+              the world.
             </p>
           </FadeIn>
 
@@ -72,8 +107,16 @@ export default function HistoryPage() {
               Two pubs, two extraordinary men, one small village.
             </p>
           </FadeIn>
+        </div>
 
-          <FadeIn delay={0.05} className="mt-12">
+        <HistoryPhoto
+          src={frontTagged}
+          alt="Dan Foley's Pub from the village street"
+          caption="A regular stop on the Dingle peninsula"
+        />
+
+        <div className="max-w-prose mx-auto">
+          <FadeIn>
             <h2 className="font-display text-3xl md:text-4xl text-burgundy-700 mb-4">
               A long quiet.
             </h2>
@@ -101,8 +144,16 @@ export default function HistoryPage() {
               gone.
             </p>
           </FadeIn>
+        </div>
 
-          <FadeIn delay={0.05} className="mt-14 text-center">
+        <HistoryPhoto
+          src={decInterior}
+          alt="Inside Dan Foley's Pub today"
+          caption="The bar today"
+        />
+
+        <div className="max-w-prose mx-auto">
+          <FadeIn className="text-center">
             <Button to="/visit" variant="primary" size="md">
               Come see for yourself
             </Button>

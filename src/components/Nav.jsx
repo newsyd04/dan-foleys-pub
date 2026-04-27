@@ -36,27 +36,39 @@ export default function Nav() {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
+  const overHero = location.pathname === "/" && !scrolled && !isOpen;
+
+  const navBgClass = scrolled
+    ? "bg-cream-50/90 backdrop-blur border-b rule-cream"
+    : overHero
+    ? "bg-gradient-to-b from-charcoal-950/70 via-charcoal-950/30 to-transparent"
+    : "bg-transparent";
+
+  const brandClass = overHero ? "text-cream-50" : "text-charcoal-900";
+  const eyebrowClass = overHero ? "text-rose-300" : "text-burgundy-600";
+  const burgerClass = overHero
+    ? "border-cream-100/30 text-cream-50 hover:bg-cream-50/10"
+    : "border-charcoal-900/20 text-charcoal-900 hover:bg-charcoal-900/5";
+
   return (
     <>
       <nav
         aria-label="Primary"
-        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${
-          scrolled
-            ? "bg-cream-50/90 backdrop-blur border-b rule-cream"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${navBgClass}`}
       >
         <div className="mx-auto max-w-page px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Brand */}
           <Link
             to="/"
-            className="flex items-baseline gap-2.5 text-charcoal-900"
+            className={`flex items-baseline gap-2.5 transition-colors ${brandClass}`}
             aria-label="Home"
           >
             <span className="font-display text-2xl tracking-tight leading-none">
               Dan Foley's
             </span>
-            <span className="hidden sm:inline text-xs uppercase tracking-widest text-burgundy-600 font-semibold">
+            <span
+              className={`hidden sm:inline text-xs uppercase tracking-widest font-semibold transition-colors ${eyebrowClass}`}
+            >
               Annascaul
             </span>
           </Link>
@@ -70,7 +82,11 @@ export default function Nav() {
                   className={({ isActive }) =>
                     `px-4 py-2 rounded-full text-sm font-medium transition ${
                       isActive
-                        ? "text-burgundy-700 bg-burgundy-600/10"
+                        ? overHero
+                          ? "text-cream-50 bg-cream-50/15"
+                          : "text-burgundy-700 bg-burgundy-600/10"
+                        : overHero
+                        ? "text-cream-100/90 hover:text-cream-50 hover:bg-cream-50/10"
                         : "text-charcoal-800 hover:text-burgundy-700 hover:bg-charcoal-900/5"
                     }`
                   }
@@ -92,7 +108,7 @@ export default function Nav() {
 
             <button
               type="button"
-              className="md:hidden inline-flex items-center gap-2 h-10 px-3 rounded-full border border-charcoal-900/20 text-charcoal-900 hover:bg-charcoal-900/5 relative z-50"
+              className={`md:hidden inline-flex items-center gap-2 h-10 px-3 rounded-full border transition-colors relative z-50 ${burgerClass}`}
               aria-expanded={isOpen}
               aria-controls="mobile-nav"
               aria-label={isOpen ? "Close menu" : "Open menu"}
