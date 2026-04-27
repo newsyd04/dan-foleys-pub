@@ -7,7 +7,7 @@ import SEO from "../components/SEO";
 
 import heroFront from "../assets/photos/00-hero-front.jpg";
 import tomCrean from "../assets/photos/tom-crean.jpg";
-import decInterior from "../assets/photos/08-dec-interior.jpg";
+import benchCouple from "../assets/photos/09-bench-couple.jpg";
 
 function HistoryPhoto({ src, alt, caption, delay = 0.05, portrait = false }) {
   const widthClass = portrait ? "max-w-xs" : "max-w-3xl";
@@ -122,12 +122,12 @@ export default function HistoryPage() {
               A long quiet.
             </h2>
             <p className="text-charcoal-800/85 leading-relaxed">
-              Dan Foley died in 1990. The pub closed with him, and the
-              building sat for the better part of three and a half decades ·
-              the colours fading, the famous Guinness sign rusting, the door
-              shut to the road. Visitors still drove the peninsula and
-              stopped to photograph the pink front, but no one was pouring
-              behind it.
+              Dan Foley sadly passed away in 1990. The pub closed with him,
+              and the building sat for the better part of three and a half
+              decades · the colours fading, the famous Guinness sign rusting,
+              the door shut to the road. Visitors still drove the peninsula
+              and stopped to photograph the pink front, but no one was
+              pouring behind it.
             </p>
           </FadeIn>
 
@@ -148,9 +148,9 @@ export default function HistoryPage() {
         </div>
 
         <HistoryPhoto
-          src={decInterior}
-          alt="Inside Dan Foley's Pub today"
-          caption="The bar today"
+          src={benchCouple}
+          alt="Outside Dan Foley's Pub, Annascaul, after the 2025 reopening"
+          caption="Thirty-five years later · the door open again"
         />
 
         <div className="max-w-prose mx-auto">

@@ -8,8 +8,8 @@ import SEO from "../components/SEO";
 
 import heroFront from "../assets/photos/00-hero-front.jpg";
 import cocktails from "../assets/photos/02-cocktails.jpg";
-import decInterior from "../assets/photos/08-dec-interior.jpg";
-import janInterior from "../assets/photos/07-jan-interior.jpg";
+import festiveBar from "../assets/photos/11-festive-bar.jpg";
+import doorwayNight from "../assets/photos/10-doorway-night.jpg";
 
 export default function HomePage() {
   return (
@@ -93,9 +93,9 @@ export default function HomePage() {
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {[
-            { src: decInterior, alt: "Inside Dan Foley's Pub" },
+            { src: festiveBar, alt: "The bar, festively lit" },
             { src: cocktails, alt: "Cocktails at the bar" },
-            { src: janInterior, alt: "An evening at the bar" },
+            { src: doorwayNight, alt: "The doorway at night" },
           ].map((p, i) => (
             <FadeIn
               key={p.src}
